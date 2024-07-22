@@ -1,29 +1,28 @@
 #Librerias
 import math
 
-#Actividad 2 - Rentabilidad - Usuario normal
+#Actividad 2 - Rentabilidad - Version 3
 #Solicitamos al usuario los datos a ingresar
 
 #Presentacion
-print("Bienvenido(a) \n> Calculadora para las utilidades de un proyecto para 'Usuarios Normales'")
+print("Bienvenido(a) \n> Calculadora para las utilidades de un proyecto")
 #P~Precio de Suscripción Base
 P = float(input("Ingrese el precio de suscripción:\n>"))
 
 #UN~Número de Usuarios normales
 UN = float(input("Ingrese el número de usuarios normales:\n>"))
 
-#UP~Número de Usuarios Premium
-UP = float(input("Ingrese el número de usuarios premium:\n>"))
-
 #GT~Gastos Totales
 GT = float(input("Ingrese los gastos totales:\n>"))
 
-#PA~Precio de suscripcion aumentado en un 50%
-PA = P * 0.5
-
+#UA Utilidades correspondientes al año anterior.
+UA = float(input(f"Ingrese las utilidades correspondientes al año anterior:\n>"))
 
 #Operacion
-utilidades = ((P * UN) + ((P + PA) * UP)) - GT
+utilidades = (P * UN - GT)
+
+razon = utilidades / UA
 
 #Resultados
-print(f"Las utilidades serian de: {round(utilidades, 2)}")
+print(f"Las utilidades de este año serian de: {round(utilidades, 2)}")
+print(f"La razon entre las utilidades de este año y las del año anterior son de: {round(razon, 2)}")

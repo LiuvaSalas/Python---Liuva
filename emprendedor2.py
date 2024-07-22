@@ -1,11 +1,11 @@
 #Librerias
 import math
 
-#Actividad 2 - Rentabilidad - Usuario normal
+#Actividad 2 - Rentabilidad - Usuario normal y premium
 #Solicitamos al usuario los datos a ingresar
 
 #Presentacion
-print("Bienvenido(a) \n> Calculadora para las utilidades de un proyecto para 'Usuarios Normales'")
+print("Bienvenido(a) \n> Calculadora para las utilidades de un proyecto para 'Usuarios Normales y Usuarios Premium'")
 #P~Precio de Suscripción Base
 P = float(input("Ingrese el precio de suscripción:\n>"))
 
